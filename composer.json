@@ -1,0 +1,52 @@
+{
+  "name" : "prismx/laravel-schemaless",
+  "description" : "",
+  "keywords" : [
+    "prismx",
+    "laravel-dynamic-pages"
+  ],
+  "homepage" : "https://github.com/prism-x/laravel-schemaless",
+  "license" : "MIT",
+  "authors" : [
+    {
+      "name" : "João Magalhães",
+      "email" : "joao@orgo.ee",
+      "role" : "Developer"
+    }
+  ],
+  "require" : {
+    "php": "^7.3",
+    "illuminate/support": "^6.8",
+    "ext-json" : "*"
+  },
+  "require-dev" : {
+    "nunomaduro/collision": "^3.0",
+    "orchestra/testbench": "^4.4",
+    "phpunit/phpunit": "^8.2",
+    "symfony/var-dumper": "^4.3"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "PrismX\\Schemaless\\" : "src"
+    }
+  },
+  "autoload-dev" : {
+    "psr-4" : {
+      "PrismX\\Schemaless\\Tests\\" : "tests"
+    }
+  },
+  "scripts" : {
+    "test" : "vendor/bin/phpunit",
+    "test-coverage" : "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config" : {
+    "sort-packages" : true
+  },
+  "extra" : {
+    "laravel" : {
+      "providers" : [
+        "PrismX\\Schemaless\\SchemalessServiceProvider"
+      ]
+    }
+  }
+}

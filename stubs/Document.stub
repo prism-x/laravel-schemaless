@@ -1,0 +1,12 @@
+<?php
+
+namespace DummyNamespace;
+
+use PrismX\Schemaless\Document;
+
+class DummyClass extends Document
+{
+    public $schema = [
+        //
+    ];
+}

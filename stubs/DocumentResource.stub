@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use PrismX\Schemaless\Support\DocumentResource;
+
+class DummyClass extends DocumentResource
+{
+    //
+}
